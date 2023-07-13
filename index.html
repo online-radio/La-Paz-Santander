@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    <meta name="description" content="la fronterisima una plataforma online para compartir temas musicales de artistas Colombianos e hispanos" />
+    <meta property="og:description" content="Plataforma online compartir temas musicales actuales - la fronterisima - artistas de Colombia y del mundo hispano.">
+    <meta name="keywords" content="Eventos musicales, la frontera, artistas de Colombia, eventos en Colombia, la fronterisima, la fronterisima, canciones nuevas, artistas nuevos" />
+    <meta property="og:site_name" content="https://descubrelapazsantander.com">
+    <meta property="og:image" content="https://www.descubrelapazsantander.com/frontera.png">
+	<title>La Paz Turistica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=arial:ital,wght@0,300;0,500;0,600;1,300&display=swap"
+        rel="stylesheet">
+     
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/fonts-icon.css">
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css">
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+	<script src="js/jquery 1.9.0.min.js"></script>
+	<link rel="stylesheet" href="css/lightbox.min.css">
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/app.js"></script>
+
+	
+	<script src="https://www.youtube.com/iframe_api"></script>
+	
+	<script>
+	$(document).ready(function () {
+		setUpSlider($('#slider1'));
+	})
+
+	function setUpSlider($container) {
+		var pos = 0,
+			slides = $container.find('.slide'),
+			numOfSlides = slides.length;
+
+		function nextSlide() {
+			// `[]` returns a vanilla DOM object from a jQuery object/collection
+			slides[pos].video.stopVideo()
+			slides.eq(pos).animate({ left: '-100%' }, 500);
+			pos = (pos >= numOfSlides - 1 ? 0 : ++pos);
+			slides.eq(pos).css({ left: '100%' }).animate({ left: 0 }, 500);
+		}
+
+		function previousSlide() {
+			slides[pos].video.stopVideo()
+			slides.eq(pos).animate({ left: '100%' }, 500);
+			pos = (pos == 0 ? numOfSlides - 1 : --pos);
+			slides.eq(pos).css({ left: '-100%' }).animate({ left: 0 }, 500);
+		}
+
+		$container.find('.left').click(previousSlide);
+		$container.find('.right').click(nextSlide);
+	}
+
+	function onYouTubeIframeAPIReady() {
+		$('.slide').each(function (index, slide) {
+			// Get the `.video` element inside each `.slide`
+			var iframe = $(slide).find('.video')[0]
+			// Create a new YT.Player from the iFrame, and store it on the `.slide` DOM object
+			slide.video = new YT.Player(iframe)
+		})
+	}
+	</script>
+	
+</head>
+
+
+
+<body>
+
+
+    <div id="arrow">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+	
+	
+    <nav class="menu">	
+ 
+    	<div id="tickers">
+         <div class="news">
+		 <div id="radio">
+	      <audio id="track">
+            <source src="http://stream.zeno.fm/t100n9re6bruv">
+		  </audio>
+		   
+		  <div id="ppbutton">
+		     <div id="play-pause" class="play"></div>
+		 </div>
+      </div>
+		 
+		 </div>
+		 
+<div class="ticker">
+  <div class="ticker_item1">La Paz una tierra de encanto.</div>
+  <div class="ticker_item">Ven y conoce, lugares enblemáticos de nuestro pueblo.</div>
+  <div class="ticker_item">Sientáte acompañado de buena música. </div>
+
+</div>
+
+</div>
+	
+</div>
+	  
+	  <div class="logo-box">
+
+       <h1 class="logo">
+	   <span>
+	  
+	   </span>
+	   </h1> 
+       <span class="btn-menu"><i class="icon-menu"></i></span>
+    
+	 
+	   
+	  
+	  
+	 <script>
+	    
+       var track = document.getElementById('track');
+       var controlBtn = document.getElementById('play-pause');
+
+       function playPause() {
+         if (track.paused) {
+         track.play();
+      
+        controlBtn.className = "pause";
+          } else { 
+        track.pause();
+      
+        controlBtn.className = "play";
+         }
+       }
+
+        controlBtn.addEventListener("click", playPause);
+        track.addEventListener("ended", function() {
+        controlBtn.className = "play";
+     });
+    </script>
+	
+
+
+     </div>
+	  
+	 
+	<div class="nav-menu" class="menu-fixed">
+	
+     <div class="list-container">
+	
+        <ul class="lists">
+		
+	
+        <li><a href='#inicio' class='activo'><span class="icon-users"></span>Inicio</a></li>
+	    <li><a href="#turismo"><span class="icon-location"></span>Turismo</a></li>
+        <li><a href="#galeria"><span class="icon-images"></span>Galeria</a></li>
+		
+	    <!--  <li> <a href="#publico" class="submenu"><span class=""></span>Instituciones <span class="icon-circle-down"></span></a>  
+		 
+		 <ul class="dropdown">
+			 <!-- <li><a href="#VIDEOS"><span class="icon-film"></span>Videos</a></li>
+		     <li><a href="#ENTREVISTA"><span class="icon-mic"></span>Alcaldia</a></li>
+			 <li><a href="#PRIVACIDAD"><span class="icon-lock"></span>Hospital</a></li>
+			 <li><a href="#CHAT"><span class="icon-bubble"></span>Cooperativa</a></li>		
+		 </ul>
+		 
+		 </li> -->
+	
+		  <li> <a href="#servicios" class="submenu">Servicios <span class="icon-circle-down"></span></a>  
+		 
+		 <ul class="dropdown">
+		   <li><a href="#empresa"><span class="icon-cart"></span>Productos</a></li>
+		   <li><a href='#hoteles'><span class="icon-home"></span>Hoteles</a></li>
+		   <li><a href="#ventas"><span class="icon-folder"></span>Ventas</a></li>
+		 </ul>
+		       
+		 </li> 
+		
+	   </ul>
+		
+		
+     </div>
+	 
+	 </div>
+    </nav>
+
+	
+	</body>
+	
+	
+	  <section id="contenido">
+	  
+	    <article id="inicio" class="elemento visible">
+	
+    <header>
+        <div class="container">
+		
+            <div class="header-info-par">
+	  
+                <h1 class="typewrite" data-period="2000"
+                    data-type='["Happiness is closer than you think","Adventure Awaits, go find it.","Dont be a tourist, be a traveler."]'>
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, ea. Mollitia maiores voluptatum
+                    vitae suscipit tenetur ut officiis assumenda ipsam.</p>
+                <a href="#" class="a">Read More</a> 
+            </div>
+            <div class="video">
+                <video id="video" autoplay loop muted>
+                    <source src="images/travel-video.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </header>
+	
+	
+	<section id="bloggers">
+     <h3>MUNICIPIO</h3>
+				
+	<div class="contenido_block">
+	
+		<section class="radio">
+			 <div class="slideshow">
+              <div class="mySlides1" >
+                 <img src="images/municipio/1.jpg">
+                <div class="note">
+                  <p>Run a test</p>
+                </div>
+              </div>
+
+              <div class="mySlides1" >
+                     <img src="images/municipio/2.jpg">
+                <div class="note">
+                  <p>Run a test2</p>
+                </div>
+              </div>
+
+              <div class="mySlides1" >
+                  <img src="images/municipio/3.jpg" >
+                <div class="note">
+                  <p>Run a test3</p>
+                </div>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+
+		    <a href="news/geografia.html" target="_blank"><h4>Ubicación</h4></a>
+            <p>El municipio de Buenavista está ubicado en el Departamento de Córdoba.</p>	
+
+			 
+   
+  
+    </section> 
+					
+		<section class="radio">
+             <div class="slideshow">
+              <div class="mySlides2">
+                   <img src="images/cultura/1.jpg">
+                <div class="note">
+                  <p>Run a test</p>
+                </div>
+              </div>
+
+              <div class="mySlides2">
+                    <img src="images/cultura/2.jpg">
+                <div class="note">
+                  <p>Run a test2</p>
+                </div>
+              </div>
+
+              <div class="mySlides2">
+                   <img src="images/cultura/3.jpg">
+                <div class="note">
+                  <p>Run a test3</p>
+                </div>
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+        
+		   <a href="news/geografia.html" target="_blank"><h4>Cultura</h4></a>
+           <p>Nuestro territorio cuenta con una riqueza hídrica, cultural, fauna y flora.</p> 
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi quae animi nihil minus sed voluptas cumque.</p>
+	   
+       
+
+	   </section>
+					
+        <section class="radio">
+
+              <div class="slideshow">
+              <div class="mySlides3">
+                    <img src="images/economia/1.jpg">
+                <div class="note">
+                  <p>Run a test</p>
+                </div>
+              </div>
+
+              <div class="mySlides3">
+                    <img src="images/economia/2.jpg">
+                <div class="note">
+                  <p>Run a test2</p>
+                </div>
+              </div>
+
+              <div class="mySlides3">
+                     <img src="images/economia/3.jpg">
+                <div class="note">
+                  <p>Run a test3</p>
+                </div>
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+            </div>
+       
+		  <a href="news/geografia.html" target="_blank"><h4>Economía</h4></a>
+          <p>El sector económico se fundamenta en la pesca, el turísmo, la ganadería, entre otros.</p>
+		   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi quae animi nihil minus sed voluptas cumque.</p>
+	
+	  </section>
+	 
+	 </div>
+	 			
+ </section>
+	
+	<section class="boxes-portfolios" id="fans">	
+	
+        <div class="caja-portfolios">
+         
+           <div class="fb_background">		   
+  		
+          <div class="fb-page" data-href="https://www.facebook.com/Fronterisima-Online-110195480742453" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/lafronterisima" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lafronterisima">La Fronterisima</a></blockquote></div>
+		   
+		   </div>
+		 </div>
+		
+
+		  <div class="caja-portfolios">
+         
+		    <div class="fb_background">	
+			
+	    <div class="video-slider" id="slider1">
+		
+		<div class="slide">
+			<iframe class="video" src="https://www.youtube.com/embed/YE7VzlLtp-4?ecver=2&enablejsapi=1"></iframe>
+		</div>
+	
+		<div class="slide">
+			<iframe class="video" src="https://www.youtube.com/embed/V2cF4uE0mXs?enablejsapi=1&html5=1&rel=0"></iframe>
+		</div>
+	
+		<div class="slide">
+			<iframe class="video" src="https://www.youtube.com/embed/5R9Fc9aIy2k?enablejsapi=1&html5=1&rel=0"></iframe>
+		</div>
+		
+		<div class="slide-arrow left"></div>
+		<div class="slide-arrow right"></div>
+	   </div>
+	
+	   </div>
+		  
+      </div>
+	  
+
+     </section>	
+	
+	
+		 
+   <section class="carousel">
+
+    <h3>ACTIVIDADES</h3>
+
+    <div class="owl-carousels_1 owl-theme">
+     
+     <div class="items">
+    
+	  <div class="productos_1 prod-first">  
+        <img src="images/locutores/1.jpg"> 
+        <div class="mask">  
+         <h2>Rami</h2>   
+         <p>Director, Periodísta y Locutor</p>
+		 
+         <div class="date-card">
+        <div class="day">21</div>
+       <div>
+      <div class="month">September</div>
+    <div class="year">2017</div>
+  </div>
+</div>
+				   
+        <a class="info"><audio controls src="https://docs.google.com/uc?export=download&id="></a>
+		   
+         </div>  
+       </div>
+	   
+     </div>
+	   
+	   
+	<div class="items">
+    
+	  <div class="productos_1 prod-first">  
+         <img src="images/locutores/2.jpg"> 
+        <div class="mask">  
+         <h2>Riveros</h2>  
+          <p>Locutor con amplia experiencia.</p>
+		  <p>Animador con gran talento.</p>
+    
+          <p>Contacto:</p>
+	   
+        <a class="info"><audio controls src="https://docs.google.com/uc?export=download&id="></a>
+          
+         </div>  
+       </div>
+	   
+     </div>
+	 
+	 
+     
+      <div class="items">
+    
+	  <div class="productos_1 prod-first">  
+         <img src="images/locutores/3.jpg"> 
+        <div class="mask">  
+         <h2>Oskar</h2>  
+        <p>Diseño Web</p>
+	    <p>Una forma de llegar al corazón de los seguidores.</p>
+	    <p>Contacto: fronterisima12@gmail.com</p>	
+		
+       <a class="info">
+	    <audio controls src="https://docs.google.com/uc?export=">
+	   </a> 
+	  
+       </div>  
+       </div>
+	   
+      </div>
+    
+    </div>
+   
+</div> 
+
+
+
+  <script src="owl/owl.carousel.min.js"></script>
+
+  <script>
+    $('.owl-carousels_1').owlCarousel({
+      margin: 15,
+       loop: true,
+       autoplay:false,
+      nav: true,
+      navText: [""],
+      responsive: {
+        0: {
+          items: 1
+        },
+        580: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  
+  
+  </section>
+	
+	
+	 <section class="containers scrollflow -slide-top">
+      <div class="header-video">
+        <video src="videos/demovideo.mp4" muted autoplay loop></video>
+      </div>
+      <div class="header-overlay"></div>
+      <div class="header-containex">
+        <h1>La Fronterísima</h1>
+        <p>Notas musicales, surcando fronteras.</p>
+        <a class="btn" href="https://onlineradiobox.com/co/lafronterisima/?cs=co.lafronterisima" target="_blank" class="btn">Síguenos</a>
+      </div>
+    </section>
+	
+	
+	
+	   <section class="flexbox-videos" >
+	
+	   <div class="videos">
+	     <h3>MUSICAL'S</h3>
+		  <div class="postcast">
+
+         <iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/users/125486431/favorites" width="100%" height="auto" scrolling="yes" frameborder="no"></iframe>
+
+          <script type="text/javascript">
+            (function(){
+             var widgetIframe = document.getElementById('sc-widget'),
+             widget = SC.Widget(widgetIframe);
+
+             widget.bind(SC.Widget.Events.READY, function() {
+             widget.bind(SC.Widget.Events.PLAY, function() {
+     
+             widget.getCurrentSound(function(currentSound) {
+             console.log('sound ' + currentSound.get('') + 'began to play');
+            });
+          });
+     
+          widget.getVolume(function(volume) {
+          console.log('current volume value is ' + volume);
+          });
+ 
+         widget.setVolume(95);
+     
+        });
+
+      }());
+     </script>
+
+   </div>
+		
+		</div>
+			
+		
+		<div class="videos">
+		   <h3 >PROMO</h3>
+		   <div class="youtube-player">
+		 
+			  <iframe id="sc-widget" src="https://youtube.com/embed/j9Sp9UDIiv4?html5=1&enablejsapi=1"></iframe>
+		   
+		   </div>
+		  
+	    </div>
+
+     </section>
+	
+	
+    <section id="blog">
+        <div class="container">
+            <h3>INFORMATIVO</h3>
+            <div class="blog-par">
+                <div class="blog-content">
+                    <!-- one div for image and one for info -->
+                    <div class="blog-img-par">
+                        <img src="images/slider/bangcok.jpg" alt="" class="img-responsive">
+
+                    </div>
+                    <div class="blog-info-par">
+                       	<div class="datetime">
+						       <span>18/02/2021 10:00 am</span>
+                            </div>
+                        <a href="news/news1.html" target="_blank"><h4>Lorem ipsum dolor consectetur</h4></a>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut natus, deserunt deleniti
+                            sapiente omnis ab quas mollitia! Cumque, maxime at.</p>
+							 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi quae animi nihil minus sed voluptas cumque.</p>
+
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <!-- one div for image and one for info -->
+                    <div class="blog-img-par">
+                        <img src="images/slider/cario.jpg" alt="" class="img-responsive">
+
+                    </div>
+                    <div class="blog-info-par">
+                         	<div class="datetime">
+						       <span>18/02/2021 10:00 am</span>
+                            </div>
+                          <a href="news/news1.html" target="_blank"><h4>Lorem ipsum dolor consectetur</h4></a>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut natus, deserunt deleniti
+                            sapiente omnis ab quas mollitia! Cumque, maxime at.</p>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi quae animi nihil minus sed voluptas cumque.</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+		
+    </section>
+ 
+	
+   <footer>
+		<div class="footer-container">
+			<div class="footer-main">
+				<div class="footer-columna">
+					<h3>Contacto</h3>
+				   <form action="" method="" id="formulario">
+					  <input type="email" name="email" id="email" placeholder="Ingresa su correo" required>
+				      <textarea type="text" name="mensajes" id="mensajes" placeholder="Ingresa su mensaje" required></textarea>
+					  <input type="submit" value="Enviar" id="submit">
+					
+				    </form>
+				   
+				</div>
+
+				<div class="footer-columna">
+					<h3>Dirección</h3>
+				<span class="fa fa-map-marker"><p> La Paz - Santander</p></span><br>	
+			    <span class="fa fa-map-marke"><p> Colombia</p></span><br>	
+				</div>
+
+				<div class="footer-columna">
+					<h3>Mapa</h3>
+				<div class="map-responsive">
+  
+             <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                src="https://maps.google.com/maps?width=100%25&height=600&hl=es&q=La%20Paz%20Santander+()&t=&z=14&ie=UTF8&iwloc=B&output=embed">
+             </iframe>
+  
+             </div>
+
+				</div>
+			</div>
+		</div>
+    </footer>
+
+	</article>
+	
+	
+	
+	  <article id="turismo" class="elemento">
+	
+	
+	<section class="boixes">
+	
+	<div class="sender" id="sender1">
+		<li><a href="#img1"><img src="images/turismo/1.jpg"></a></li>
+		
+	  <div class="info">
+		<h4>Hoyo del Aire</h4>
+			<p>Esta ubicado en la Vereda del Tigre perteneciente al Municipio de La Paz Santander. Posee unas dimensiones que impresionan a los visitantes y lugareños. Su abertura es de aproximadamente de 170 metros y con una profundidad de 180 metros, catalogandose coomo el segundo hoyo más grande del mundo.</p>
+			
+		    <p>El subsuelo esta cubierto con una vegetación particular, arbustos, platanillos, palmas entre otras plantas que le dan una belleza e impresion inimaginable. A su vez, tiene una caberna, que en lo profundo la recorre una pequeña corriente de agua. </p>
+			
+			<p>Referente a lo turistico, muchas personas de diversos lugares cada año y por epocas vacionales, visitan esta maravilla, quedando perplejos y satisfechos de conocer un encanto natural. </p>
+			
+			
+		<label><p>Ubicada en la vereda: El Tigre</p></label><br>
+		<label class="precio"></label><label class="mini"></label>
+		
+	</div>
+	
+
+	<div class="modal" id="img1">
+	
+		<a class="cancel" href="#sender1"></a>
+
+		<div class="imagen">
+			<a href="#img2"></a>
+	        <a href="#img2"><img src="images/turismo/1.jpg"></a>
+			<a href="#img2"></a>
+		</div>
+	
+	</div>
+
+	<div class="modal" id="img2"> <a class="cancel" href="#sender1"></a>
+
+		<div class="imagen">
+			<a href="#img3"></a>
+	        <a href="#img3"><img src="images/turismo/2.jpg"></a>
+			<a href="#img3"></a>
+		</div>
+			
+	</div>
+
+	<div class="modal" id="img3">
+	<a class="cancel" href="#sender1"></a>
+		
+		<div class="imagen">
+			<a href="#img1"></a>
+	        <a href="#img1"><img src="images/turismo/3.jpg"></a>
+			<a href="#img1"></a>
+		</div>
+	
+	</div>
+	
+
+</section>
+	
+	
+	<section class="boixes">
+	
+	<div class="sender" id="sender2">
+		<li><a href="#img1"><img src="images/turismo/1.jpg"></a></li>
+		
+	<div class="info">
+		<h4>Laguna negra</h4>
+			<p>Un formación acuifera de gran belleza. Desde el plano de leyenda, se dice que esta laguna surge a raiz de un fuerte aguacero, que inundo ese sector, desapareciendo la choza de una india, que segun sus moradores la llamaban la india negra.</p>
+			   
+		<p>De ahi se deriva el nombre de Laguna de la negra, posteriormente se le llama Laguna Negra, aunque sus aguas son cristalinas y su paisaje fantastico.</p>
+			
+		<label><p>Ubicada en la vereda: El Hato</p></label><br>
+		<label class="precio"></label><label class="mini"></label>
+
+	</div>
+	
+	 <div class="modal" id="img1">
+     	<a class="cancel" href="#sender1"></a> 
+	
+		<div class="imagen">
+			<a href="#img2"></a>
+	        <a href="#img2"><src="images/modal/1.jpg"></a>
+			<a href="#img2"></a>
+		</div>
+	</div>
+
+	<div class="modal" id="img2">
+		
+		<div class="imagen">
+			<a href="#img3"></a>
+	        <a href="#img3"><img src="images/modal/3.jpg"></a>
+			<a href="#img3"></a>
+		</div>
+	</div>
+
+	<div class="modal" id="img3">
+	
+		<div class="imagen">
+			<a href="#img1"></a>
+	        <a href="#img1"><img src="images/modal/3.jpg"></a>
+			<a href="#img1"></a>
+		</div>
+	</div>
+	
+   
+</section>
+
+
+	<section class="boixes">
+	
+	<div class="sender" id="sender2">
+		<li><a href="#img1"><img src="images/turismo/1.jpg"></a></li>
+		
+	<div class="info">
+		<h4>Cueva del Molino</h4>
+			<p>Un sitio impresionante con una longitud que sobrepasa los 800 metros. Anteriormente en su entrada se habia puesto un trapiche que usaba la fuerza de caballos, para extraer la miel de la caña. A su vez, este lugar cuenta con una serie de galerias y estalamitas que adoran su interior.</p>
+			   
+		<p>No se lo pierdan, es un lugar lleno de fantasia y digno de visitar y pasar un momento agradable. No olvide tomar precauciones, llevar una linterna y otros elementos necesarios, para vivir una travesia sensacional.</p>
+			
+		<label><p>Ubicada en la vereda: Carrero</p></label><br>
+		<label class="precio"></label><label class="mini"></label>
+
+	</div>
+	
+	 <div class="modal" id="img1">
+     	<a class="cancel" href="#sender1"></a> 
+	
+		<div class="imagen">
+			<a href="#img2"></a>
+	        <a href="#img2"><src="images/modal/1.jpg"></a>
+			<a href="#img2"></a>
+		</div>
+	</div>
+
+	<div class="modal" id="img2">
+		
+		<div class="imagen">
+			<a href="#img3"></a>
+	        <a href="#img3"><img src="images/modal/3.jpg"></a>
+			<a href="#img3"></a>
+		</div>
+	</div>
+
+	<div class="modal" id="img3">
+	
+		<div class="imagen">
+			<a href="#img1"></a>
+	        <a href="#img1"><img src="images/modal/3.jpg"></a>
+			<a href="#img1"></a>
+		</div>
+	</div>
+	
+   
+</section>
+	
+	
+	<section class="boixes">
+	
+	<div class="sender" id="sender3">
+		<li><a href="#img1"><img src="images/turismo/1.jpg"></a></li>
+		
+	<div class="info">
+		<h4>Bocas del Opón</h4>
+			<p>Esta tierra esta regada por rios en la parte baja del municipio, su temperatura cálida da paso a disfrutar de este majestuoso balneario natural, donde convergen las aguas de los rios Quirata y El Opón.
+			<p>Se encuentra en limites de los municipios de Santa Helena del Opón, Landazuri y la Paz Santander.</p>
+			
+		<label><p>Ubicada en la vereda: Trochas</p></label><br>
+		<label class="precio"></label><label class="mini"></label>
+	
+	</div>
+	
+    <div class="modal" id="img1">
+     	<a class="cancel" href="#sender1"></a> 
+	
+		<div class="imagen">
+			<a href="#img2"></a>
+	        <a href="#img2"><src="images/modal/1.jpg"></a>
+			<a href="#img2"></a>
+		</div>
+	</div>
+
+	<div class="modal" id="img2">
+		
+		<div class="imagen">
+			<a href="#img3"></a>
+	        <a href="#img3"><img src="images/modal/3.jpg"></a>
+			<a href="#img3"></a>
+		</div>
+	</div>
+
+	<div class="modal" id="img3">
+	
+		<div class="imagen">
+			<a href="#img1"></a>
+	        <a href="#img1"><img src="images/modal/3.jpg"></a>
+			<a href="#img1"></a>
+		</div>
+	</div>
+
+</section>
+
+	<section class="boixes">
+	
+	<div class="sender" id="sender2">
+		<li><a href="#img1"><img src="images/turismo/1.jpg"></a></li>
+		
+	<div class="info">
+		<h4>Balneario La Gacha</h4>
+			<p>Un formación acuifera de gran belleza. Desde el plano de leyenda, se dice que esta laguna surge a raiz de un fuerte aguacero, que inundo ese sector, desapareciendo la choza de una india, que segun sus moradores la llamaban la india negra.</p>
+			   
+		<p>De ahi se deriva el nombre de Laguna de la negra, posteriormente se le llama Laguna Negra, aunque sus aguas son cristalinas y su paisaje fantastico.</p>
+			
+		<label><p>Ubicada en la vereda: El Hato</p></label><br>
+		<label class="precio"></label><label class="mini"></label>
+
+	</div>
+	
+	 <div class="modal" id="img1">
+     	<a class="cancel" href="#sender1"></a> 
+	
+		<div class="imagen">
+			<a href="#img2"></a>
+	        <a href="#img2"><src="images/modal/1.jpg"></a>
+			<a href="#img2"></a>
+		</div>
+	</div>
+
+	<div class="modal" id="img2">
+		
+		<div class="imagen">
+			<a href="#img3"></a>
+	        <a href="#img3"><img src="images/modal/3.jpg"></a>
+			<a href="#img3"></a>
+		</div>
+	</div>
+
+	<div class="modal" id="img3">
+	
+		<div class="imagen">
+			<a href="#img1"></a>
+	        <a href="#img1"><img src="images/modal/3.jpg"></a>
+			<a href="#img1"></a>
+		</div>
+	</div>
+	
+   
+</section>
+
+	<section class="boixes">
+	
+	<div class="sender" id="sender2">
+		<li><a href="#img1"><img src="images/turismo/1.jpg"></a></li>
+		
+	<div class="info">
+		<h4>Piscina La Paz</h4>
+			<p>Un formación acuifera de gran belleza. Desde el plano de leyenda, se dice que esta laguna surge a raiz de un fuerte aguacero, que inundo ese sector, desapareciendo la choza de una india, que segun sus moradores la llamaban la india negra.</p>
+			   
+		<p>De ahi se deriva el nombre de Laguna de la negra, posteriormente se le llama Laguna Negra, aunque sus aguas son cristalinas y su paisaje fantastico.</p>
+			
+		<label><p>Ubicada en la vereda: El Hato</p></label><br>
+		<label class="precio"></label><label class="mini"></label>
+
+	</div>
+	
+	 <div class="modal" id="img1">
+     	<a class="cancel" href="#sender1"></a> 
+	
+		<div class="imagen">
+			<a href="#img2"></a>
+	        <a href="#img2"><src="images/modal/1.jpg"></a>
+			<a href="#img2"></a>
+		</div>
+	</div>
+
+	<div class="modal" id="img2">
+		
+		<div class="imagen">
+			<a href="#img3"></a>
+	        <a href="#img3"><img src="images/modal/3.jpg"></a>
+			<a href="#img3"></a>
+		</div>
+	</div>
+
+	<div class="modal" id="img3">
+	
+		<div class="imagen">
+			<a href="#img1"></a>
+	        <a href="#img1"><img src="images/modal/3.jpg"></a>
+			<a href="#img1"></a>
+		</div>
+	</div>
+	
+   
+</section>
+
+	
+   <footer>
+		<div class="footer-container">
+			<div class="footer-main">
+				<div class="footer-columna">
+					<h3>Contacto</h3>
+				    <form action="" id="formulario">
+					    <span class="fa fa-envelope"> <a href="https://mail.google.com" target="_blank" style="color:white"><p>emisoraleonaradio@gmail.com</p></a></span><br>
+					    <span class="fa fa-facebook"> <a href="https://www.facebook.com/BuenavistaSt" target="_blank" style="color:white"><p>Facebook</p></a></span><br>
+					  </form> 
+				   
+				</div>
+
+				<div class="footer-columna">
+					<h3>Dirección</h3>
+				<span class="fa fa-map-marker"><p> La Paz Santander </p></span><br>	
+			    <span class="fa fa-map-marke"><p> Colombia</p></span><br>
+				</div>
+
+				<div class="footer-columna">
+					<h3>Mapa</h3>
+				<div class="map-responsive">
+  
+              <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                src="https://maps.google.com/maps?width=100%25&height=600&hl=es&q=La%20Paz%20Santander+()&t=&z=14&ie=UTF8&iwloc=B&output=embed">
+              </iframe>
+  
+             </div>
+
+				</div>
+			</div>
+		</div>
+
+    </footer>
+
+	</article>
+	
+	
+	
+	  <article id="galeria" class="elemento">
+	
+      <section id="wrap_galery">
+    
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Locutor: Arlex Marín"><img class="example-image" src="images/galeria/cantante.jpg"  title="Locución"></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Tomada por: Oscar C"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Atardecer"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Paisaje"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Paisaje"/></a>
+    </section>
+   
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Actividades"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Actividades"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Producciones"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Producciones"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Paisajismo"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Paisajismo"/></a>
+    </section>
+   
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Cultura"><img class="example-image" src="images/galeria/cantante.jpg" title="Cultura"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Dj Music"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Dj Music"/></a>
+    </section>
+    <section class="imagen-web">
+       <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Cultura"><img class="example-image" src="images/galeria/cantante.jpg" title="Cultura"/></a>
+    </section>
+	
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Cultura"><img class="example-image" src="images/galeria/cantante.jpg" title="Cultura"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Dj Music"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Dj Music"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Pensamiento"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Pensamiento"/></a>
+    </section>
+ 
+
+  </section>
+		
+		
+    <!-- Footer -->
+   <footer>
+		<div class="footer-container">
+			<div class="footer-main">
+				<div class="footer-columna">
+					<h3>Contacto</h3>
+				     <form action="" id="formulario">
+					    <span class="fa fa-envelope"> <a href="https://mail.google.com" target="_blank" style="color:white"><p>emisoraleonaradio@gmail.com</p></a></span><br>
+					    <span class="fa fa-facebook"> <a href="https://www.facebook.com/BuenavistaSt" target="_blank" style="color:white"><p>Facebook</p></a></span><br>
+					  </form> 
+				   
+				</div>
+
+				<div class="footer-columna">
+					<h3>Dirección</h3>
+					<span class="fa fa-map-marker"><p> La Paz Santander </p></span><br>	
+                    <span class="fa fa-map-marke"><p> Colombia</p></span><br>					
+				</div>
+
+				<div class="footer-columna">
+					<h3>Mapa</h3>
+				<div class="map-responsive">
+  
+             <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                src="https://maps.google.com/maps?width=100%25&height=600&hl=es&q=La%20Paz%20Santander+()&t=&z=14&ie=UTF8&iwloc=B&output=embed">
+             </iframe>
+  
+             </div>
+
+				</div>
+			</div>
+		</div>
+
+		
+    </footer>
+
+	</article>
+	
+	
+	<article id="empresa" id="publico"  class="elemento">
+	
+ <section class="card_conteners">
+     
+   <div class="booxes">
+   <div class="boster">
+      <li><a href="#imgs1"><img src="images/empresa/1.jpg"></a></li> 
+   </div>
+  <div class="details"><h1><em>Boracay Island</em></h1>
+  <h2>Surfer's Home</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi quae animi nihil minus sed voluptas cumque.</p>
+  </div>
+  
+  	<div class="modals" id="imgs1">
+		<a class="cancels" href="#sender1"></a>
+		<div class="image">
+			<a href="#imgs2"></a>
+	        <a href="#imgs2"><img src="images/empresa/1.jpg"></a>  
+			<a href="#imgs2"></a>
+		</div>
+		
+	</div>
+
+	<div class="modals" id="imgs2">
+		<a class="cancels" href="#sender1"></a>
+		<div class="image">
+			<a href="#imgs3"></a>
+	        <a href="#imgs3"><img src="images/empresa/2.jpg"></a>
+			<a href="#imgs3"></a>
+		</div>
+		
+	</div>
+
+	<div class="modals" id="imgs3">
+		<a class="cancels" href="#sender1"></a>
+		<div class="image">
+			<a href="#imgs1"></a>
+	        <a href="#imgs1"><img src="images/empresa/3.jpg"></a>
+			<a href="#imgs1"></a>
+		</div>
+	
+	</div>
+	
+</div>
+
+     <div class="booxes">
+   <div class="boster">
+      <li><a href="#imgs1"><img src="images/economia/1.jpg"></a></li> 
+   </div>
+  <div class="details"><h1><em>Boracay Island</em></h1>
+  <h2>Surfer's Home</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi quae animi nihil minus sed voluptas cumque.</p>
+  </div>
+  
+  	<div class="modals" id="imgs1">
+	
+	<a class="cancels" href="#sender1"></a>
+	
+		<div class="image">
+			<a href="#imgs2"></a>
+	        <a href="#imgs2"><img src="images/empresa/1.jpg"></a>
+			<a href="#imgs2"></a>
+		</div>
+		
+	</div>
+
+	<div class="modals" id="imgs2">
+		<div class="image">
+			<a href="#imgs3"></a>
+	        <a href="#imgs2"><img src="images/empresa/2.jpg"></a>
+			<a href="#imgs3"></a>
+		</div>
+		
+	</div>
+
+	<div class="modals" id="imgs3">
+		<div class="image">
+			<a href="#imgs1"></a>
+	        <a href="#imgs2"><img src="images/empresa/3.jpg"></a>
+			<a href="#imgs1"></a>
+		</div>
+	
+	</div>
+	
+</div>
+
+     <div class="booxes">
+   <div class="boster">
+      <a href="#imgs2"><img src="images/empresa/1.jpg"></a>
+   </div>
+  <div class="details"><h1><em>Boracay Island</em></h1>
+  <h2>Surfer's Home</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi quae animi nihil minus sed voluptas cumque.</p>
+  </div>
+  
+  	<div class="modals" id="imgs1">
+	
+	<a class="cancels" href="#sender1"></a>
+	
+		<div class="image">
+			<a href="#imgs2"></a>
+	       <a href="#imgs2"><img src="images/empresa/1.jpg"></a>
+			<a href="#imgs2"></a>
+		</div>
+		
+	</div>
+
+	<div class="modals" id="imgs2">
+		<div class="image">
+			<a href="#imgs3"></a>
+	       <a href="#imgs2"><img src="images/empresa/2.jpg"></a>
+			<a href="#imgs3"></a>
+		</div>
+		
+	</div>
+
+	<div class="modals" id="imgs3">
+		<div class="image">
+			<a href="#imgs1"></a>
+	        <a href="#imgs2"><img src="images/empresa/3.jpg"></a>
+			<a href="#imgs1"></a>
+		</div>
+	
+	</div>
+	
+</div>
+
+</section>
+
+
+   <footer>
+		<div class="footer-container">
+			<div class="footer-main">
+				<div class="footer-columna">
+					<h3>Contacto</h3>
+				      <form action="" id="formulario">
+					    <span class="fa fa-envelope"> <a href="https://mail.google.com" target="_blank" style="color:white"><p>emisoraleonaradio@gmail.com</p></a></span><br>
+					    <span class="fa fa-facebook"> <a href="https://www.facebook.com/BuenavistaSt" target="_blank" style="color:white"><p>Facebook</p></a></span><br>
+					  </form> 
+				   
+				</div>
+
+				<div class="footer-columna">
+					<h3>Dirección</h3>
+					<span class="fa fa-map-marker"><p> La Paz Santander </p></span><br>	
+                    <span class="fa fa-map-marke"><p> Colombia</p></span><br>					
+				</div>
+
+				<div class="footer-columna">
+					<h3>Mapa</h3>
+				<div class="map-responsive">
+  
+             <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                src="https://maps.google.com/maps?width=100%25&height=600&hl=es&q=La%20Paz%20Santander+()&t=&z=14&ie=UTF8&iwloc=B&output=embed">
+             </iframe>
+  
+             </div>
+
+				</div>
+			</div>
+		</div>
+
+	   
+    </footer>
+
+	</article>
+	
+	
+	
+	<article id="hoteles" class="elemento">
+	
+	  <section class="contenedor">
+	   <div class="box">
+		<div class="imagen"> <img class="imag" src="images/turismo/1.jpg" alt="crepusculo">
+			<div class="noches"><h4>1 noche </h3></div>
+		</div>
+		<div class="descripcion margin">
+			<div class="paquete margin"><h3>Paquete a San Carlos de bariloche</h3></div>
+			<h2 class="porpersona"> Precio final por persona</h2>
+			<h2>$2500</h2>
+		</div>
+		
+	</div>
+
+
+      <div class="box">   
+		<div class="imagen"> <img class="imag" src="images/turismo/2.jpg" alt="crepusculo">
+			<div class="noches"><h4>3 noches</h3></div>
+		</div>
+		<div class="descripcion margin">
+			<div class="vuelo margin "><h2>vuelo + alojamiento</h2></div>
+			<div class="paquete  margin"><h3>Paquete a San Carlos de bariloche</h3></div>
+			<h2 class="porpersona"> Precio final por persona</h2>
+			<h2>$2500</h2>
+		</div>
+	
+	</div>
+	
+	  <div class="box">   
+		<div class="imagen"> <img class="imag" src="images/turismo/2.jpg" alt="crepusculo">
+			<div class="noches"><h4>3 noches</h3></div>
+		</div>
+		<div class="descripcion margin">
+			<div class="paquete  margin"><h3>Paquete a San Carlos de bariloche</h3></div>
+			<div class="puntuacion margin "> <h4> 7.9</h4></div>
+			<h2 class="porpersona"> Precio final por persona</h2>
+			<h2>$2500</h2>
+		</div>
+	
+	</div>
+	
+  </section>
+	
+	
+ 
+    <!-- Footer -->
+   <footer>
+		<div class="footer-container">
+			<div class="footer-main">
+				<div class="footer-columna">
+					<h3>Contacto</h3>
+				      <form action="" id="formulario">
+					    <span class="fa fa-envelope"> <a href="https://mail.google.com" target="_blank" style="color:white"><p>emisoraleonaradio@gmail.com</p></a></span><br>
+					    <span class="fa fa-facebook"> <a href="https://www.facebook.com/BuenavistaSt" target="_blank" style="color:white"><p>Facebook</p></a></span><br>
+					  </form> 
+				   
+				</div>
+
+				<div class="footer-columna">
+					<h3>Dirección</h3>
+					<span class="fa fa-map-marker"><p> La Paz Santander </p></span><br>		
+				    <span class="fa fa-map-marke"><p> Colombia</p></span><br>
+				</div>
+
+				<div class="footer-columna">
+					<h3>Mapa</h3>
+				<div class="map-responsive">
+  
+             <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                src="https://maps.google.com/maps?width=100%25&height=600&hl=es&q=Barrio%20SanJose%20buenavista+()&t=&z=14&ie=UTF8&iwloc=B&output=embed">
+             </iframe>
+  
+             </div>
+
+				</div>
+			</div>
+		</div>
+     
+    </footer>
+
+	</article>
+	
+	
+	
+	<article id="ventas" id="servicios"  class="elemento">
+	
+	  <section class="box_contains">
+	  
+      <div class="boxs">
+        <div class="top">
+            <img src="images/predios/1.jpg" alt="" class="news-card__image">
+      
+        </div>
+        <div class="bottom">
+          <h3>Home In Merrick Way</h3>
+          <p>
+            Enchanting three bedrooms, three bath home with spacious one
+            bedroom, one bath...
+          </p>
+          <div class="advants">
+            <div>
+              <span>Bedrooms</span>
+              <div><i class="fas fa-th-large"></i><span>3</span></div>
+            </div>
+            <div>
+              <span>Bathrooms</span>
+              <div><i class="fas fa-shower"></i><span>3</span></div>
+            </div>
+            <div>
+              <span>Area</span>
+              <div>
+                <i class="fas fa-vector-square"></i
+                ><span>4300<span>Sq Ft</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="price">
+            <span>For Sale</span>
+            <span>$540,000</span>
+          </div>
+        </div>
+      </div>
+	  
+      <div class="boxs">
+        <div class="top">
+            <img src="images/predios/2.jpg" alt="" class="news-card__image">
+        </div>
+        <div class="bottom">
+          <h3>Villa In Alexandria</h3>
+          <p>
+            Enjoy serenity of Deering Bay whole day from this spectacular North
+            and...
+          </p>
+          <div class="advants">
+            <div>
+              <span>Bedrooms</span>
+              <div><i class="fas fa-th-large"></i><span>3</span></div>
+            </div>
+            <div>
+              <span>Bathrooms</span>
+              <div><i class="fas fa-shower"></i><span>3.5</span></div>
+            </div>
+            <div>
+              <span>Area</span>
+              <div>
+                <i class="fas fa-vector-square"></i
+                ><span>3500<span>Sq Ft</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="price">
+            <span>For Sale</span>
+            <span>$825,000</span>
+          </div>
+        </div>
+      </div>
+	  
+      <div class="boxs">
+        <div class="top">
+             <img src="images/predios/3.jpg" alt="" class="news-card__image">
+          <span
+            ><i class="fas fa-heart"></i><i class="fas fa-exchange-alt"></i
+          ></span>
+        </div>
+        <div class="bottom">
+          <h3>Villa In Cairo</h3>
+          <p>
+            The very best waterfront location in Tahrir square and beside many
+            cool places
+          </p>
+          <div class="advants">
+            <div>
+              <span>Bedrooms</span>
+              <div><i class="fas fa-th-large"></i><span>3</span></div>
+            </div>
+            <div>
+              <span>Bathrooms</span>
+              <div><i class="fas fa-shower"></i><span>2</span></div>
+            </div>
+            <div>
+              <span>Area</span>
+              <div>
+                <i class="fas fa-vector-square"></i
+                ><span>1800<span>Sq Ft</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="price">
+            <span>For Sale</span>
+            <span>$410,000</span>
+          </div>
+        </div>
+      </div>
+	  
+    </section>
+	
+
+	
+   <footer>
+		<div class="footer-container">
+			<div class="footer-main">
+				<div class="footer-columna">
+					<h3>Contacto</h3>
+				     <form action="" id="formulario">
+					    <span class="fa fa-envelope"> <a href="https://mail.google.com" target="_blank" style="color:white"><p>emisoraleonaradio@gmail.com</p></a></span><br>
+					    <span class="fa fa-facebook"> <a href="https://www.facebook.com/BuenavistaSt" target="_blank" style="color:white"><p>Facebook</p></a></span><br>
+					  </form> 
+				</div>
+
+				<div class="footer-columna">
+					<h3>Dirección</h3>
+					<span class="fa fa-map-marker"><p> La Paz Santander </p></span><br>	
+                    <span class="fa fa-map-marke"><p> Colombia</p></span><br>					
+				</div>
+
+				<div class="footer-columna">
+					<h3>Mapa</h3>
+				<div class="map-responsive">
+  
+              <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                src="https://maps.google.com/maps?width=100%25&height=600&hl=es&q=La%20Paz%20Santander+()&t=&z=14&ie=UTF8&iwloc=B&output=embed">
+              </iframe>
+  
+             </div>
+
+				</div>
+			</div>
+		</div>
+
+    </footer>
+
+	</article>
+ 
+
+	</section>
+	
+	
+	
+	<script src="js/sliders.js"></script>	
+	<script src="js/menu.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/extrenaljq.js"></script>
+    <script src="js/ideal-image-slider.js"></script>
+	<script src="js/form_send.js"></script>
+	
+	
+</body>
+
+</html>
