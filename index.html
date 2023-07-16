@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
-    <meta name="description" content="la fronterisima una plataforma online para compartir temas musicales de artistas Colombianos e hispanos" />
-    <meta property="og:description" content="Plataforma online compartir temas musicales actuales - la fronterisima - artistas de Colombia y del mundo hispano.">
-    <meta name="keywords" content="Eventos musicales, la frontera, artistas de Colombia, eventos en Colombia, la fronterisima, la fronterisima, canciones nuevas, artistas nuevos" />
-    <meta property="og:site_name" content="https://descubrelapazsantander.com">
-    <meta property="og:image" content="https://www.descubrelapazsantander.com/frontera.png">
-	<title>La Paz Turistica</title>
+    <meta property="og:description" content="Soy de La Paz Santander, un espacio digital para compartir aspectos de nuestro municipio" />
+    <meta name="keywords" content="La Paz Santander, turismo, La Paz, ventas, cafe, productos, hoteles, pueblo, predios, lotes, sitios turisticos, hoyo del aire, cuevas" />
+    <meta property="og:site_name" content="https://soydelapazsantander.com">
+    <meta property="og:image" content="https://www.soydelapazsantander.com/lapaz.png">
+	<title>Soy de La Paz Santander</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=arial:ital,wght@0,300;0,500;0,600;1,300&display=swap"
@@ -41,7 +40,6 @@
 			numOfSlides = slides.length;
 
 		function nextSlide() {
-			// `[]` returns a vanilla DOM object from a jQuery object/collection
 			slides[pos].video.stopVideo()
 			slides.eq(pos).animate({ left: '-100%' }, 500);
 			pos = (pos >= numOfSlides - 1 ? 0 : ++pos);
@@ -61,9 +59,7 @@
 
 	function onYouTubeIframeAPIReady() {
 		$('.slide').each(function (index, slide) {
-			// Get the `.video` element inside each `.slide`
 			var iframe = $(slide).find('.video')[0]
-			// Create a new YT.Player from the iFrame, and store it on the `.slide` DOM object
 			slide.video = new YT.Player(iframe)
 		})
 	}
@@ -125,18 +121,16 @@
 	    
        var track = document.getElementById('track');
        var controlBtn = document.getElementById('play-pause');
-
        function playPause() {
          if (track.paused) {
          track.play();
-      
-        controlBtn.className = "pause";
+         controlBtn.className = "pause";
           } else { 
-        track.pause();
+         track.pause();
       
-        controlBtn.className = "play";
-         }
-       }
+         controlBtn.className = "play";
+          }
+        }
 
         controlBtn.addEventListener("click", playPause);
         track.addEventListener("ended", function() {
@@ -158,10 +152,7 @@
 	
         <li><a href='#inicio' class='activo'><span class="icon-users"></span>Inicio</a></li>
 	    <li><a href="#turismo"><span class="icon-location"></span>Turismo</a></li>
-        <li><a href="#galeria"><span class="icon-images"></span>Galeria</a></li>
-		
 	    <!--  <li> <a href="#publico" class="submenu"><span class=""></span>Instituciones <span class="icon-circle-down"></span></a>  
-		 
 		 <ul class="dropdown">
 			 <!-- <li><a href="#VIDEOS"><span class="icon-film"></span>Videos</a></li>
 		     <li><a href="#ENTREVISTA"><span class="icon-mic"></span>Alcaldia</a></li>
@@ -174,14 +165,13 @@
 		  <li> <a href="#servicios" class="submenu">Servicios <span class="icon-circle-down"></span></a>  
 		 
 		 <ul class="dropdown">
-		   <li><a href="#empresa"><span class="icon-cart"></span>Productos</a></li>
-		   <li><a href='#hoteles'><span class="icon-home"></span>Hoteles</a></li>
-		   <li><a href="#ventas"><span class="icon-folder"></span>Ventas</a></li>
-		 </ul>
-		       
-		 </li> 
-		
-	   </ul>
+		    <li><a href="#empresa"><span class="icon-cart"></span>Productos</a></li>
+		    <li><a href='#hoteles'><span class="icon-home"></span>Hoteles</a></li>
+		    <li><a href="#ventas"><span class="icon-folder"></span>Ventas</a></li>
+		  </ul>  
+		  </li>
+		  <li><a href="#galeria"><span class="icon-images"></span>Galeria</a></li>
+	    </ul>
 		
 		
      </div>
@@ -250,7 +240,7 @@
               <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
             </div>
 
-		    <a href="news/geografia.html" target="_blank"><h4>Ubicación</h4></a>
+		    <a href="news/geografia.html" target="_blank"><h4>Geografía</h4></a>
             <p>El municipio de Buenavista está ubicado en el Departamento de Córdoba.</p>	
 
 			 
@@ -387,12 +377,12 @@
          <p>Director, Periodísta y Locutor</p>
 		 
          <div class="date-card">
-        <div class="day">21</div>
-       <div>
-      <div class="month">September</div>
-    <div class="year">2017</div>
-  </div>
-</div>
+           <div class="day">21</div>
+          <div>
+         <div class="month">September</div>
+          <div class="year">2017</div>
+          </div>
+         </div>
 				   
         <a class="info"><audio controls src="https://docs.google.com/uc?export=download&id="></a>
 		   
@@ -409,11 +399,16 @@
         <div class="mask">  
          <h2>Riveros</h2>  
           <p>Locutor con amplia experiencia.</p>
-		  <p>Animador con gran talento.</p>
-    
-          <p>Contacto:</p>
-	   
-        <a class="info"><audio controls src="https://docs.google.com/uc?export=download&id="></a>
+		 
+		  <div class="date-card">
+           <div class="day">21</div>
+          <div>
+         <div class="month">September</div>
+          <div class="year">2017</div>
+          </div>
+         </div>
+		 
+         <a class="info"><audio controls src="https://docs.google.com/uc?export=download&id="></a>
           
          </div>  
        </div>
@@ -429,12 +424,16 @@
         <div class="mask">  
          <h2>Oskar</h2>  
         <p>Diseño Web</p>
-	    <p>Una forma de llegar al corazón de los seguidores.</p>
-	    <p>Contacto: fronterisima12@gmail.com</p>	
+	   
+	     <div class="date-card">
+           <div class="day">21</div>
+          <div>
+         <div class="month">September</div>
+          <div class="year">2017</div>
+          </div>
+         </div>
 		
-       <a class="info">
-	    <audio controls src="https://docs.google.com/uc?export=">
-	   </a> 
+       <a class="info"><audio controls src="https://docs.google.com/uc?export="></a> 
 	  
        </div>  
        </div>
@@ -954,97 +953,9 @@
 	</article>
 	
 	
+  <article id="empresa" id="publico"  class="elemento">
 	
-	  <article id="galeria" class="elemento">
-	
-      <section id="wrap_galery">
-    
-    <section class="imagen-web">
-      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Locutor: Arlex Marín"><img class="example-image" src="images/galeria/cantante.jpg"  title="Locución"></a>
-    </section>
-    <section class="imagen-web">
-      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Tomada por: Oscar C"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Atardecer"/></a>
-    </section>
-    <section class="imagen-web">
-      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Paisaje"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Paisaje"/></a>
-    </section>
-   
-    <section class="imagen-web">
-      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Actividades"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Actividades"/></a>
-    </section>
-    <section class="imagen-web">
-      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Producciones"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Producciones"/></a>
-    </section>
-    <section class="imagen-web">
-      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Paisajismo"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Paisajismo"/></a>
-    </section>
-   
-    <section class="imagen-web">
-      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Cultura"><img class="example-image" src="images/galeria/cantante.jpg" title="Cultura"/></a>
-    </section>
-    <section class="imagen-web">
-      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Dj Music"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Dj Music"/></a>
-    </section>
-    <section class="imagen-web">
-       <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Cultura"><img class="example-image" src="images/galeria/cantante.jpg" title="Cultura"/></a>
-    </section>
-	
-    <section class="imagen-web">
-      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Cultura"><img class="example-image" src="images/galeria/cantante.jpg" title="Cultura"/></a>
-    </section>
-    <section class="imagen-web">
-      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Dj Music"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Dj Music"/></a>
-    </section>
-    <section class="imagen-web">
-      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Pensamiento"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Pensamiento"/></a>
-    </section>
- 
-
-  </section>
-		
-		
-    <!-- Footer -->
-   <footer>
-		<div class="footer-container">
-			<div class="footer-main">
-				<div class="footer-columna">
-					<h3>Contacto</h3>
-				     <form action="" id="formulario">
-					    <span class="fa fa-envelope"> <a href="https://mail.google.com" target="_blank" style="color:white"><p>emisoraleonaradio@gmail.com</p></a></span><br>
-					    <span class="fa fa-facebook"> <a href="https://www.facebook.com/BuenavistaSt" target="_blank" style="color:white"><p>Facebook</p></a></span><br>
-					  </form> 
-				   
-				</div>
-
-				<div class="footer-columna">
-					<h3>Dirección</h3>
-					<span class="fa fa-map-marker"><p> La Paz Santander </p></span><br>	
-                    <span class="fa fa-map-marke"><p> Colombia</p></span><br>					
-				</div>
-
-				<div class="footer-columna">
-					<h3>Mapa</h3>
-				<div class="map-responsive">
-  
-             <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-                src="https://maps.google.com/maps?width=100%25&height=600&hl=es&q=La%20Paz%20Santander+()&t=&z=14&ie=UTF8&iwloc=B&output=embed">
-             </iframe>
-  
-             </div>
-
-				</div>
-			</div>
-		</div>
-
-		
-    </footer>
-
-	</article>
-	
-	
-	<article id="empresa" id="publico"  class="elemento">
-	
- <section class="card_conteners">
+  <section class="card_conteners">
      
    <div class="booxes">
    <div class="boster">
@@ -1300,11 +1211,11 @@
 	
 	  <section class="box_contains">
 	  
-      <div class="boxs">
-        <div class="top">
-            <img src="images/predios/1.jpg" alt="" class="news-card__image">
-      
+        <div class="boxs">
+        <div class="tops">
+            <li><a href="#imgx1"> <img src="images/predios/1.jpg"></a></li>
         </div>
+		
         <div class="bottom">
           <h3>Home In Merrick Way</h3>
           <p>
@@ -1333,17 +1244,53 @@
             <span>$540,000</span>
           </div>
         </div>
-      </div>
+		
+		
+		<div class="modal_s" id="imgx1">
+	
+		<a class="cancel_s" href="#sender1"></a>
+
+		<div class="imagex">
+			<a href="#imgx2"></a>
+	        <a href="#imgx2"><img src="images/predios/1.jpg"></a>
+			<a href="#imgx2"></a>
+		</div>
+	
+	</div>
+
+	<div class="modal_s" id="imgx2">
+	
+		<div class="imagex">
+			<a href="#imgx3"></a>
+	        <a href="#imgx3"><img src="images/predios/2.jpg"</a>
+			<a href="#imgx3"></a>
+		</div>
+	
+	</div>
+
+	<div class="modal_s" id="imgx3">
+	
+		<div class="imagex">
+			<a href="#imgx1"></a>
+	        <a href="#imgx1"><img src="images/predios/3.jpg"></a>
+			<a href="#imgx1"></a>
+		</div>
+	
+	  </div>
+		
+    </div>
 	  
-      <div class="boxs">
-        <div class="top">
-            <img src="images/predios/2.jpg" alt="" class="news-card__image">
+	  
+	   <div class="boxs">
+        <div class="tops">
+            <li><a href="#imgx1"><img src="images/predios/2.jpg"></a></li>
         </div>
+		
         <div class="bottom">
-          <h3>Villa In Alexandria</h3>
+          <h3>Home In Merrick Way</h3>
           <p>
-            Enjoy serenity of Deering Bay whole day from this spectacular North
-            and...
+            Enchanting three bedrooms, three bath home with spacious one
+            bedroom, one bath...
           </p>
           <div class="advants">
             <div>
@@ -1352,35 +1299,68 @@
             </div>
             <div>
               <span>Bathrooms</span>
-              <div><i class="fas fa-shower"></i><span>3.5</span></div>
+              <div><i class="fas fa-shower"></i><span>3</span></div>
             </div>
             <div>
               <span>Area</span>
               <div>
                 <i class="fas fa-vector-square"></i
-                ><span>3500<span>Sq Ft</span></span>
+                ><span>4300<span>Sq Ft</span></span>
               </div>
             </div>
           </div>
           <div class="price">
             <span>For Sale</span>
-            <span>$825,000</span>
+            <span>$540,000</span>
           </div>
         </div>
-      </div>
+		
+		
+		<div class="modal_s" id="imgx1">
+		
+	     <a class="cancel_s" href="#sender1"></a>
+		
+		  <div class="imagex">
+			<a href="#imgx2"></a>
+	        <a href="#imgx2"><img src="images/predios/1.jpg"></a>
+			<a href="#imgx2"></a>
+		  </div>
+	
+    	</div>
+
+	<div class="modal_s" id="imgx2">
+	
+		<div class="imagex">
+			<a href="#imgx3"></a>
+	        <a href="#imgx3"><img src="images/predios/2.jpg"></a>
+			<a href="#imgx3"></a>
+		</div>
+	
+	</div>
+
+	<div class="modal_s" id="imgx3">
+		<h3>Diamante</h3>
+		<div class="imagex">
+			<a href="#imgx1"></a>
+	        <a href="#imgx1"><img src="images/predios/3.jpg"></a>
+			<a href="#imgx1"></a>
+		</div>
+	
+	  </div>
+		
+    </div>
 	  
-      <div class="boxs">
-        <div class="top">
-             <img src="images/predios/3.jpg" alt="" class="news-card__image">
-          <span
-            ><i class="fas fa-heart"></i><i class="fas fa-exchange-alt"></i
-          ></span>
+	  
+          <div class="boxs">
+        <div class="tops">
+            <li><a href="#imgx1"> <img src="images/predios/3.jpg"></a></li>
         </div>
+		
         <div class="bottom">
-          <h3>Villa In Cairo</h3>
+          <h3>Home In Merrick Way</h3>
           <p>
-            The very best waterfront location in Tahrir square and beside many
-            cool places
+            Enchanting three bedrooms, three bath home with spacious one
+            bedroom, one bath...
           </p>
           <div class="advants">
             <div>
@@ -1389,23 +1369,58 @@
             </div>
             <div>
               <span>Bathrooms</span>
-              <div><i class="fas fa-shower"></i><span>2</span></div>
+              <div><i class="fas fa-shower"></i><span>3</span></div>
             </div>
             <div>
               <span>Area</span>
               <div>
                 <i class="fas fa-vector-square"></i
-                ><span>1800<span>Sq Ft</span></span>
+                ><span>4300<span>Sq Ft</span></span>
               </div>
             </div>
           </div>
           <div class="price">
             <span>For Sale</span>
-            <span>$410,000</span>
+            <span>$540,000</span>
           </div>
         </div>
-      </div>
+		
+		
+		<div class="modal_s" id="imgx1">
+		
+		  <a class="cancel_s" href="#sender1"></a>
+		
+		  <div class="imagex">
+			<a href="#imgx2"></a>
+	        <a href="#imgx2"><img src="images/predios/1.jpg"></a>
+			<a href="#imgx2"></a>
+		  </div>
+	
+    	</div>
+
+	<div class="modal_s" id="imgx2">
+	
+		<div class="imagex">
+			<a href="#imgx3"></a>
+	        <a href="#imgx3"><img src="images/predios/2.jpg"></a>
+			<a href="#imgx3"></a>
+		</div>
+	
+	</div>
+
+	<div class="modal_s" id="imgx3">
+	
+		<div class="imagex">
+			<a href="#imgx1"></a>
+	        <a href="#imgx1"><img src="images/predios/3.jpg"></a>
+			<a href="#imgx1"></a>
+		</div>
+	
+	  </div>
+		
+    </div>
 	  
+      
     </section>
 	
 
@@ -1444,7 +1459,94 @@
     </footer>
 
 	</article>
+	
+	
+	  <article id="galeria" class="elemento">
+	
+      <section id="wrap_galery">
+    
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Locutor: Arlex Marín"><img class="example-image" src="images/galeria/cantante.jpg"  title="Locución"></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Tomada por: Oscar C"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Atardecer"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Paisaje"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Paisaje"/></a>
+    </section>
+   
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Actividades"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Actividades"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Producciones"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Producciones"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Paisajismo"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Paisajismo"/></a>
+    </section>
+   
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Cultura"><img class="example-image" src="images/galeria/cantante.jpg" title="Cultura"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Dj Music"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Dj Music"/></a>
+    </section>
+    <section class="imagen-web">
+       <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Cultura"><img class="example-image" src="images/galeria/cantante.jpg" title="Cultura"/></a>
+    </section>
+	
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Cultura"><img class="example-image" src="images/galeria/cantante.jpg" title="Cultura"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Dj Music"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Dj Music"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="images/galeria/cantante.jpg" data-lightbox="example-set" data-title="Pensamiento"><img class="example-image" src="images/galeria/cantante.jpg" alt="#" title="Pensamiento"/></a>
+    </section>
  
+
+  </section>
+		
+		
+    <!-- Footer -->
+   <footer>
+		<div class="footer-container">
+			<div class="footer-main">
+				<div class="footer-columna">
+					<h3>Contacto</h3>
+				     <form action="" id="formulario">
+					    <span class="fa fa-envelope"> <a href="https://mail.google.com" target="_blank" style="color:white"><p>emisoraleonaradio@gmail.com</p></a></span><br>
+					    <span class="fa fa-facebook"> <a href="https://www.facebook.com/BuenavistaSt" target="_blank" style="color:white"><p>Facebook</p></a></span><br>
+					  </form> 
+				   
+				</div>
+
+				<div class="footer-columna">
+					<h3>Dirección</h3>
+					<span class="fa fa-map-marker"><p> La Paz Santander </p></span><br>	
+                    <span class="fa fa-map-marke"><p> Colombia</p></span><br>					
+				</div>
+
+				<div class="footer-columna">
+					<h3>Mapa</h3>
+				<div class="map-responsive">
+  
+             <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                src="https://maps.google.com/maps?width=100%25&height=600&hl=es&q=La%20Paz%20Santander+()&t=&z=14&ie=UTF8&iwloc=B&output=embed">
+             </iframe>
+  
+             </div>
+
+				</div>
+			</div>
+		</div>
+
+		
+    </footer>
+
+	</article>
+	
 
 	</section>
 	
