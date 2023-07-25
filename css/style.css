@@ -144,15 +144,14 @@ video#video{
     object-fit: cover;
 }
 
-.header-info-par a{
+.header-info-par .fb-like{
 	width:15%;
 	height:30px;
-    background-color: ;
+    background-color:;
     padding: 17px 45px;
-    display: inline-block;
+    display:flex;
     margin-top: 25px;
-    position: relative;
-    overflow: hidden;
+	margin: 0 auto;
 }
 
 
@@ -270,6 +269,7 @@ section#blog h3{
     color: #00a8c5;
     font-size: 20px;
     margin: 5px 0px;
+	text-decoration:underline;
 }
 .blog-info-par p{
     color:black;
@@ -1933,6 +1933,7 @@ left:0px;
 	padding-bottom:20px;
     font-family:arial;	
 	margin-top:40px;
+	
 }
 
 #bloggers h4 {
@@ -1942,6 +1943,7 @@ left:0px;
 	padding-bottom:10px;
     font-family:arial;	
 	padding-top:20px;
+	text-decoration:underline;
 }
 
 #bloggers p{
@@ -3039,8 +3041,8 @@ left:0px;
 
  .mask .date-card{
   border:1px solid #ddd;
-  width:48%;
-  height:40px;
+  width:50%;
+  height:50px;
   display: flex;
   margin:0 auto;
   text-align:center;
@@ -3055,7 +3057,7 @@ left:0px;
  .mask .date-card .day{
   font-size:28px;
   margin:0px 10px;
-  color:#2ab6b6;
+  color:#2ab6b6; 
 }
 
  .mask .date-card .month{
@@ -3499,7 +3501,7 @@ left:0px;
    .mask .date-card{
   border:1px solid #ddd;
   width:48%;
-  height:40px;
+  height:50px;
   display: flex;
   margin:0 auto;
   text-align:center;
