@@ -114,9 +114,6 @@ article .elemento {
   display:block;
 }
 
-
-
-
 header{
     width: 100%;
     height: 100vh;
@@ -148,31 +145,14 @@ video#video{
 }
 
 .header-info-par a{
-    background-color: #fff;
-    color: #00a8b4;
+	width:15%;
+	height:30px;
+    background-color: ;
     padding: 17px 45px;
     display: inline-block;
     margin-top: 25px;
     position: relative;
     overflow: hidden;
-}
-
-.header-info-par a:after{
-    content: "Read More";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #00a8b4;
-    color: #fff;
-    width: 0%;
-    height: 100%;
-    line-height: 50px;
-    transition: all 0.5s ease;
-}
-.header-info-par a:hover:after{
-    width: 100%;
-	
 }
 
 
@@ -184,12 +164,13 @@ video#video{
 }
 .header-info-par p{
     line-height: 30px;
-    font-size: 15px;
-    width: 80%;
+    font-size: 18px;
+    width:100%;
     margin: auto;
+	color:white;
 }
 
-/* Welcome-text section */
+
 section#welcome-text h2{
     color: #343a40;
     font-size: 45px;
@@ -288,13 +269,12 @@ section#blog h3{
 .blog-info-par h4{
     color: #00a8c5;
     font-size: 20px;
-    margin: 5px 0px;d
+    margin: 5px 0px;
 }
 .blog-info-par p{
     color:black;
 	width:98%;
 	text-align:justify;
-
     font-size: 14px;
 	
 }
@@ -1976,7 +1956,7 @@ left:0px;
 
 #bloggers img {
 	width:95%;
-	height:280px;
+	height:300px;
 	padding-top:px;
 	margin:0 auto;
 	display:flex;
@@ -3920,7 +3900,7 @@ left:0px;
 }
 
 .modal .imagen {
-    width: 80;
+    width: 100%;
 	height:70%;
     display: flex;
      vertical-align: middle;
@@ -4230,7 +4210,7 @@ left:0px;
 }
 
 .modals .image {
-    width: 80;
+    width: 100%;
 	height:70%;
     display: flex;
      vertical-align: middle;
@@ -4523,7 +4503,7 @@ left:0px;
 }
 
 
-/*section predios*/
+/*section ventas*/
 
 #ventas{
   padding-top:40px;
@@ -4683,7 +4663,7 @@ left:0px;
 }
 
  .modal_s .imagex{
-    width: 80;
+    width:100%;
 	height:70%;
     display: flex;
      vertical-align: middle;
