@@ -1113,6 +1113,7 @@ logo-box{
      position: absolute;
      vertical-align: middle;
      background:url(../images/turismo/logo.jpg);
+	 background-repeat:no-repeat;
      width: 100%;
      height: 100vh;
      display: flex;
