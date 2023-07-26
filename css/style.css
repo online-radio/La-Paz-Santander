@@ -144,13 +144,12 @@ video#video{
     object-fit: cover;
 }
 
-.header-info-par .fb-like{
-	width:15%;
-	height:30px;
+.blog-info-par .fb-like{
+	width:18%;
+	height:40px;
     background-color:;
-    padding: 17px 45px;
     display:flex;
-    margin-top: 25px;
+    margin-top: 35px;
 	margin: 0 auto;
 }
 
@@ -167,6 +166,7 @@ video#video{
     width:100%;
     margin: auto;
 	color:white;
+	margin-bottom:8px;
 }
 
 
@@ -367,6 +367,14 @@ section#blog h3{
 	  align-items:flex-start;
 	  flex-direction:column;
 	}
+	.blog-info-par .fb-like{
+	width:18%;
+	height:40px;
+    background-color:;
+    display:flex;
+    margin-top: 35px;
+	margin: 0 auto;
+}
 }
 
 
@@ -420,6 +428,14 @@ section#blog h3{
 	padding-right: 10px;
 	font-size: 12px;
 	font-style: italic;
+}
+   .blog-info-par .fb-like{
+	width:18%;
+	height:40px;
+    background-color:;
+    display:flex;
+    margin-top: 35px;
+	margin: 0 auto;
 }
 }
 
