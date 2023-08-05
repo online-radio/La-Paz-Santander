@@ -841,15 +841,17 @@ logo-box{
     }
 	
   .menu .list-container .lists {
-     position: absolute;
+      position: absolute;
      vertical-align: middle;
      background:url(../images/turismo/logo.jpg);
      width: 100%;
-     height:95vh;
+     height:100vh;
+	 margin-top:px;
+	 left:0;
      display: flex;
      justify-content: center;
      align-items: center;
-     flex-direction:column;
+     flex-direction:column; padding-bottom:50px;
     }
 
 	
@@ -899,6 +901,7 @@ logo-box{
         color:lime;
 
     }
+
 
 	
      .menu-trigger{
@@ -955,7 +958,8 @@ logo-box{
 
     position: static;
 
-    background-color: rgba(0, 0, 0, 0.2); 
+    background-color: rgba(0, 0, 0, 0.0); 
+	
 	margin:0 auto;
 
   }
@@ -1107,7 +1111,7 @@ logo-box{
 
     .menu .logo-box{margin-left: 30px;}
 
-    .menu .list-container{
+     .menu .list-container{
  
         position:absolute;
 
@@ -1117,28 +1121,28 @@ logo-box{
 
         width: 100%;
 
-        height: 100vh; 
+        height:100%;
 
 		 justify-content: center;
 
-         align-items: center;
+         align-items: center
 
     }
 	
-  .menu  .list-container .lists{
-     position: absolute;
+  .menu .list-container .lists {
+      position: absolute;
      vertical-align: middle;
      background:url(../images/turismo/logo.jpg);
-	 background-repeat:no-repeat;
      width: 100%;
-     height: 100vh;
+     height:100vh;
+	 margin-top:px;
+	 left:0;
      display: flex;
      justify-content: center;
      align-items: center;
-     flex-direction:column;
-     margin-bottom:10px;
-     border-top:4px solid var:red; 
+     flex-direction:column; padding-bottom:50px;
     }
+
 	
 	.list-container::-webkit-scrollbar{
 		display:none;
@@ -1186,6 +1190,7 @@ logo-box{
         color:lime;
 
     }
+
 
    .menu .list-container ul li a:hover{
 
@@ -1403,38 +1408,38 @@ logo-box{
 
     .menu .logo-box{margin-left: 30px;}
 
-      .menu .list-container{
+     .menu .list-container{
  
         position:absolute;
 
         top:58px;
 
-      	background-color:#272727;
+        background-color:#272727;
 
         width: 100%;
 
-        height: 100vh; 
+        height:100%;
 
 		 justify-content: center;
 
-         align-items: center;
+         align-items: center
 
     }
 	
-  .menu  .list-container .lists{
-     position: absolute;
+  .menu .list-container .lists {
+      position: absolute;
      vertical-align: middle;
      background:url(../images/turismo/logo.jpg);
      width: 100%;
-     height: 100vh;
+     height:100vh;
+	 margin-top:px;
+	 left:0;
      display: flex;
      justify-content: center;
      align-items: center;
-     flex-direction:column;
-
-     margin-bottom:10px;
-     border-top:4px solid var:red; 
+     flex-direction:column; padding-bottom:50px;
     }
+
 	
 	.list-container::-webkit-scrollbar{
 		display:none;
@@ -1452,19 +1457,19 @@ logo-box{
     .menu .list-container ul li{
 
         width:100%;
-
-		padding-top:20px;
 		
 
-        display: flex;
+        display: flex; 
+
 
         justify-content: center;  
+       
+        background-color: rgba(0, 0, 0, 0.5); 
 
-	    background-color: rgba(0, 0, 0, 0.5); 
     }
 
     .menu .list-container ul li a{
-
+     
         font-size: 20px;
 
         text-align: center;
@@ -1472,7 +1477,7 @@ logo-box{
         padding:12px 0px;
 
 		color:white;
-
+		
     }
 
     .menu .list-container ul li a.active{
@@ -1482,6 +1487,7 @@ logo-box{
         color:lime;
 
     }
+
 
     .menu .list-container ul li a:hover{
 
@@ -1733,39 +1739,40 @@ left:0px;
 
     .menu .logo-box{margin-left: 30px;}
 
-      .menu .list-container{
+     .menu .list-container{
  
         position:absolute;
 
         top:58px;
 
-       	background-color:#272727;
+        background-color:#272727;
 
         width: 100%;
 
-        height: 100vh; 
+        height:100%;
 
 		 justify-content: center;
 
-         align-items: center;
+         align-items: center
 
     }
 	
-  .menu  .list-container .lists{
-     position: absolute;
+  .menu .list-container .lists {
+      position: absolute;
      vertical-align: middle;
      background:url(../images/turismo/logo.jpg);
      width: 100%;
-     height: 100vh;
+     height:100vh;
+	 margin-top:px;
+	 left:0;
      display: flex;
      justify-content: center;
      align-items: center;
-     flex-direction:column;
-     margin-bottom:10px;
-     border-top:4px solid var:red; 
+     flex-direction:column; padding-bottom:50px;
     }
 
-    .list-container::-webkit-scrollbar{
+	
+	.list-container::-webkit-scrollbar{
 		display:none;
 	}
 	
@@ -1776,25 +1783,24 @@ left:0px;
 	.list-container{
 		scrollbar-width:none;
 	}
-		
 	
 
     .menu .list-container ul li{
 
         width:100%;
+		
 
-		padding-top:20px;
+        display: flex; 
 
-        display: flex;
 
         justify-content: center;  
-
-	    background-color: rgba(0, 0, 0, 0.5); 	
+       
+        background-color: rgba(0, 0, 0, 0.5); 
 
     }
 
     .menu .list-container ul li a{
-
+     
         font-size: 20px;
 
         text-align: center;
@@ -1802,7 +1808,7 @@ left:0px;
         padding:12px 0px;
 
 		color:white;
-
+		
     }
 
     .menu .list-container ul li a.active{
@@ -1810,8 +1816,9 @@ left:0px;
         background: none;
 
         color:lime;
-		
+
     }
+
 
 
    .menu .list-container ul li a:hover{
@@ -6575,4 +6582,6 @@ img:hover {
  }
 
 }
+
+
 
