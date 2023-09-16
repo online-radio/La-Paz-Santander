@@ -2,7 +2,7 @@ const evento = document.getElementById('submit')
 const enviarFormulario =() => {
         let email= document.getElementById('email').value;
         let mensajes = document.getElementById('mensajes').value;
-        let numero = +573155276476;
+        let numero = +57;
 var win= window.open(`https://wa.me/${numero}?text=Hola%20mi%20correo%20es%20${email}, Asunto:%20${mensajes}`,'_blank');       
 }
 evento.addEventListener('click', enviarFormulario)
